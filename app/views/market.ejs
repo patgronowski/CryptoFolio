@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CryptoFolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+    integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <!-- C3 CSS -->
+    <link href="c3-0.4.18/c3.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/custom.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- ===== NAVIGATION ===== -->
+    <%- include partials/navbar.ejs %>
+
+    <section id="market">
+
+        <div class="container">
+            <input type="text" id="tableSearch" placeholder="Search for cryptocurrency">
+        </div>
+
+        <div id="table" class="container">
+            <div class="row">
+                <div class="col-lg-12 centered">
+                    <table id="actualTable" class="table table-sm table-bordered">
+                        <thead>
+                            <tr>
+                                <td class="table-header">Rank</td>
+                                <td class="table-header">Name</td>
+                                <td class="table-header">Symbol</td>
+                                <td class="table-header">Price (USD)</td>
+                                <td class="table-header">Market Cap (USD)</td>
+                            </tr>
+                        </thead>
+
+                        <tbody class="table-body">
+
+                        </tbody>
+
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        </section>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+        <script src="https://d3js.org/d3.v3.min.js"></script>
+        <script src="c3-0.4.18/c3.min.js"></script>
+        <script src="js/chart.js"></script>
+        <script src="js/buttons.js"></script>
+        <script src="js/profile.js"></script>
+        <script src="js/market.js"></script>
+
+    </body>
+
+    </html>

@@ -1,0 +1,18 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<div id="messageModal" class="messageModal" role="dialog" style="display:none">
+    <div>
+        <h3 id="heading">Message</h2>
+        <p id= "messageSpan"></p>
+    </div>
+</div>
+
+<script>
+    document.getElementById("messageModal").style.width = window.innerWidth * 0.20 + "px"
+    document.getElementById("messageSpan").style.width = window.innerWidth * 0.20 + "px"
+    document.getElementById("messageModal").style.height = window.innerHeight * 0.25 + "px"
+    document.getElementById("messageSpan").style.height = window.innerHeight * 0.25 + "px"
+    document.getElementById("heading").style.textAlign = "center"
+    document.getElementById("messageSpan").style.textAlign = "center"
+    document.getElementById("messageSpan").style.overflow = "scroll"
+</script>

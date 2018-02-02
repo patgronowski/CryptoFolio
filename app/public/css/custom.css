@@ -1,0 +1,166 @@
+/* ===== GLOBAL ===== */
+
+h1, h2, h3, h4, h5, h6 {
+    text-shadow: 1px 1px 1px #212529;
+}
+
+/* ===== HEADER ===== */
+
+#home {
+    background: url(../assets/header-bg.png) 60% 80% no-repeat;
+    text-align: center;
+    height: 100vh;
+    padding-top: 75px;
+}
+
+#home .btn {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+@media (max-width: 576px) {
+    #home .display-1 {
+        font-size: 4em !important;
+    }
+}
+
+#cryptoFolioNav {
+    color: white;
+}
+
+/* ===== PROFILE ===== */
+
+#profile {
+    padding-bottom: 50px;
+    padding-top: 75px;
+    height: 100vh;
+    background: url(../assets/header-bg.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-size: 100% 100%;
+}
+
+/* ===== MARKET ===== */
+
+#market {
+    background: url(../assets/header-bg-yellow.png) 40% 20%;
+    background-repeat: no-repeat;
+    /*height: 100vh;*/
+    padding-top: 75px;
+    padding-bottom: 25px;
+}
+
+/* ===== FOOTER ===== */
+
+#contact {
+    background-color: #212529;
+    color: white;
+    padding: 25px 0 25px 0;
+    height: 100vh;
+}
+
+.platforms h4 {
+    display: inline;
+}
+
+#footer-logo {
+    height: 200px;
+    padding-bottom: 30px;
+}
+
+#footer h3 {
+    padding-bottom: 30px;
+}
+
+.passwordBox {
+    margin-left: 10px;
+}
+
+.signIn {
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.cancel {
+    margin-top: 5px;
+}
+
+.table {
+    background-color: #212121;
+}
+
+th, td {
+    color: black;
+}
+
+.btn, .nav-link {
+    cursor: pointer !important;
+}
+
+.navbar-nav .nav-link {
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 40px;
+    line-height: 40px;
+}
+
+.messages {
+    background: #000000;
+    width: 15%;
+    height: 100vh;
+    float: right;
+    margin-top: 4%
+}
+
+.messages h3 {
+    color: white;
+}
+
+.modalHeader {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 15px;
+    border-top-left-radius: .3rem;
+    border-top-right-radius: .3rem;
+}
+
+#table {
+    overflow-y: scroll;
+}
+
+#tableSearch {
+    background-position: 10px 12px; /* Position the search icon */
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+    width: 100%; /* Full-width */
+    font-size: 16px; /* Increase font-size */
+    padding: 12px 20px 12px 40px; /* Add some padding */
+    border: 1px solid #ddd; /* Add a grey border */
+    margin-bottom: 12px; /* Add some space below the input */
+}
+
+#table::-webkit-scrollbar {
+    display: none;
+}
+
+#messageSpan {
+    word-break: break-all;
+}
+
+#messageModal {
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    display: block;
+    background-color: rgb(240, 248, 255);
+    box-shadow: lightslategrey 0px 0px 0.5px 0.5px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    outline: 0px;
+}

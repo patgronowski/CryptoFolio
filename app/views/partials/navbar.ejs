@@ -1,0 +1,34 @@
+<nav class="navbar fixed-top navbar-dark bg-dark navbar-expand-md">
+    <div class="container">
+        <a class="navbar-brand" href="/" id="cryptoFolioNav">CryptoFolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <% if (user) { %>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/profile"><%= user.username %>'s Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/market">Market</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/logout">Logout</a>
+                    </li>
+                <% } else { %>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="modal" data-target="#loginModal">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="modal" data-target="#registerModal">Register</a>
+                    </li>
+                <% } %>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact" id="footerNav">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
