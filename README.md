@@ -6,6 +6,8 @@ CryptoFolio makes use of the CoinMarketCap API (https://coinmarketcap.com/api/) 
 ## To run:
 cd app
 
+npm install
+
 node server.js
 
 The server is run on port 3000 by default.
